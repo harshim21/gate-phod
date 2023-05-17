@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    background-color: rgb(253, 248, 248);
     
     
 }
@@ -11,14 +12,26 @@
     
     
 }
+img{width: 300px;
+    height: 200X;
+
+}
+.logo {
+    background-color: white;
+    width: 100%;
+    box-shadow: 4px 4px 15px black;
+    
+
+}
+
+
 .sidebar a { 
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: rgb(1, 184, 184);
+    color: rgb(253, 94, 73);
     display: block;
     list-style-type: none;
-    text-shadow: 3PX;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: bisque;
     margin-bottom: 3px;
@@ -26,7 +39,7 @@
 
 }
 .sidebar a:hover{
-    color: aqua;
+    color: rgb(247, 168, 64);
     animation: forwards;
     transform: matrix3d(5px);
     
@@ -40,7 +53,8 @@
     overflow-x: hidden;
     padding-top: 20px;
     left: 0px;
-    
+    border-radius: 6PX;
+    box-shadow: 4px 4px 15px black;
 
 }
 nav{
@@ -48,18 +62,14 @@ nav{
     padding: 5px 5px;
 }
 
-h1{
-    text-align: center;
-    background-color: rgb(24, 204, 189);
-    text-shadow: 5PX;
-    display: block;
-    box-shadow: 5PX;
+.logo h1{text-align: center;
     
 }
 h2{
     margin-left: 220px;
     padding: 5px 5px;
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    padding-top: 2px;
 }
 p{
     margin-left: 220px;
@@ -73,5 +83,5 @@ table{
 }
 tr,td{
     padding: 4PX 4PX;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
