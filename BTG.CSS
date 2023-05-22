@@ -2,14 +2,14 @@
 {
     margin: 0;
     padding: 0;
-    user-select: none;
-    background-color: rgb(253, 248, 248);
+    
+    
     
     
 }
     body{
     font-family: "LATO",sans-serif;
-    
+    background-color: rgb(243, 236, 218);
     
 }
 img{width: 300px;
@@ -22,19 +22,48 @@ img{width: 300px;
     
 
 }
+.intro {
+    
+    
+    color: rgb(27, 13, 13)
+}
+.intro img{
+    height: 300px;
+    width: 100%;
+    box-shadow: 4PX;
+     
+}
+  .centered {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    margin-left: 640px;
+    color: white;
+  text-align: center;
+  }
+  .centered h1
+  {
+    font-size: 40px;
+   color: white;
+   text-align: center;
+   padding-bottom: 6px;
 
+  }
+  .centered h2{
+    margin-left: 5px;
+  }
 
-.sidebar a { 
+.sidebar LI { 
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(253, 94, 73);
     display: block;
-    list-style-type: none;
+    list-style-type: circle;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: bisque;
-    margin-bottom: 3px;
-
+    margin-bottom: 4px;
+    
     
 
 }
@@ -48,37 +77,41 @@ img{width: 300px;
 
 .sidebar{
     height: max-content;
-    width: 200px;
-    position: fixed;
+    position: absolute;
     overflow-x: hidden;
     padding-top: 20px;
-    left: 0px;
+    right: 0PX;
     border-radius: 6PX;
     box-shadow: 4px 4px 15px black;
+    background-color: white;
 
 }
 nav{
-    position: top;
-    padding: 5px 5px;
+    float: right;
+    padding-top: 50px;
+    background-color: white;
+    text-decoration: none;
 }
+
 
 .logo h1{text-align: center;
     
 }
 h2{
-    margin-left: 220px;
+    
     padding: 5px 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     padding-top: 2px;
+    padding-bottom: 3px;
 }
 p{
-    margin-left: 220px;
+    margin-right: 500PX;
     padding: 2PX;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 table{
-    margin-left: 220px;
+    border: 1px;
     
 }
 tr,td{
