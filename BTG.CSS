@@ -2,21 +2,22 @@
 {
     margin: 0;
     padding: 0;
-    
+
     
     
     
 }
-    body{
+ body{
     font-family: "LATO",sans-serif;
     background-color: rgb(243, 236, 218);
-    
+    overflow: scroll;
 }
 img{width: 300px;
     height: 200X;
 
 }
 .logo {
+    
     background-color: white;
     width: 100%;
     
@@ -24,8 +25,7 @@ img{width: 300px;
 }
 .intro {
     
-    
-    color: rgb(27, 13, 13)
+    color: rgb(27, 13, 13);
 }
 .intro img{
     height: 300px;
@@ -40,6 +40,7 @@ img{width: 300px;
     margin-left: 640px;
     color: white;
   text-align: center;
+
   }
   .centered h1
   {
@@ -86,14 +87,7 @@ img{width: 300px;
     background-color: white;
 
 }
-nav{
-    float: right;
-    padding-top: 50px;
-    background-color: white;
-    text-decoration: none;
-}
-
-
+ 
 .logo h1{text-align: center;
     
 }
@@ -104,8 +98,9 @@ h2{
     padding-top: 2px;
     padding-bottom: 3px;
 }
-p{
-    margin-right: 500PX;
+p{ 
+    
+    margin-right: 500px;
     padding: 2PX;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -117,4 +112,49 @@ table{
 tr,td{
     padding: 4PX 4PX;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    padding-left: 4px;
+    color: black;
+
+}
+
+nav ul li{
+    display: inline-block;
+    float: TOP;
+    position: relative;
+    flex-direction: row;
+    
+}
+nav ul a{
+    display: block;
+    text-align: center;
+    width: 150px;
+    padding: 10px 20px;
+}
+nav ul a:hover{
+    background: rgb(219, 57, 57);
+}
+nav ul li ul li{
+    float:right;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background: #f5f5f5;
+    top: 2px;
+}
+nav ul li:hover>ul{
+    display: block;
+}
+nav ul li a{
+    display: block;
+}
+header h1{
+    text-align: center;
+}
+header nav{
+    float: TOP;
+    direction: rtl;
 }
