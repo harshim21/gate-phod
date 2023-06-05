@@ -29,7 +29,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid bisque;
-    padding: 5px;
+    padding: 9px;
     border-radius: 5px;
     cursor: pointer;
 
@@ -94,4 +94,5 @@ footer{
     background-color: #1f7783;
     height: 100PX;
     width: 100%;
+    margin-top: 70px;
 }

@@ -24,20 +24,23 @@ img{width: 300px;
 
 }
 .intro {
-    
+    display: flex;
     color: rgb(27, 13, 13);
+    width: 100%;
+    
 }
 .intro img{
     height: 300px;
     width: 100%;
     box-shadow: 4PX;
+    
      
 }
   .centered {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    margin-left: 640px;
+    margin-left:  100vh;
     color: white;
   text-align: center;
 
@@ -85,7 +88,6 @@ img{width: 300px;
     border-radius: 6PX;
     box-shadow: 4px 4px 15px black;
     background-color: white;
-
 }
  
 .logo h1{text-align: center;
@@ -119,10 +121,12 @@ a{
     color: black;
 
 }
+nav{
+    position: static;
+}
 
 nav ul li{
     display: inline-block;
-    float: TOP;
     position: relative;
     flex-direction: row;
     
@@ -142,11 +146,15 @@ nav ul li ul li{
 nav ul li ul{
     display: none;
     position: absolute;
-    background: #f5f5f5;
+    background: #fffcfc;
     top: 2px;
+    
+    
 }
 nav ul li:hover>ul{
     display: block;
+
+
 }
 nav ul li a{
     display: block;
@@ -155,6 +163,6 @@ header h1{
     text-align: center;
 }
 header nav{
-    float: TOP;
+
     direction: rtl;
 }
