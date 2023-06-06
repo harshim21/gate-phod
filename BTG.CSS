@@ -2,9 +2,8 @@
 {
     margin: 0;
     padding: 0;
+    user-select: none;
 
-    
-    
     
 }
  body{
@@ -12,17 +11,114 @@
     background-color: rgb(243, 236, 218);
     overflow: scroll;
 }
-img{width: 300px;
-    height: 200X;
 
+/* defining header */
+header{
+  position: static;
 }
 .logo {
-    
+  
     background-color: white;
     width: 100%;
+    display: flex;
+    align-items: center;
     
 
 }
+.logo img{
+    width:200px;
+    height: 100X;
+    padding-right: 45rem;
+
+}
+
+/* NAVIGATION BAR DECORE */
+nav {
+    &.primary-navigation {
+      margin: 0 auto;
+      display: block;
+      color: #f0443e;
+    
+      padding: 120px 0 0 0;  
+      text-align: center;
+      font-size: 16px;}}
+  
+     NAV UL LI{
+        list-style: none;
+        margin: 0 auto;
+        border-left: 2px solid #0c0b0b;
+        display: inline-block;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        font-family: arvo;
+      }
+  
+      li a {
+        color: rgb(240, 67, 67);
+      }
+  
+      li a:hover {
+        color: #f55656;
+      }
+  
+      li:hover {
+        cursor: pointer;
+      }
+  
+      ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+  padding-left: 0;
+        left: 0;
+        display: none;
+        background: white;
+      }
+  
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 250px;
+        text-align: left;
+        padding-top: 20px;
+        box-shadow: 0px 3px 5px -1px #e06060;
+      }
+  
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+      }
+  
+      ul li ul li a:hover {
+        padding-left: 10px;
+        border-left: 2px solid #0e1113;
+        transition: all 0.3s ease;
+      }
+  
+  a {
+  
+      text-decoration: none;
+  
+      &:hover {
+          color: #221e1c;
+      }
+   
+  }
+  
+   ul li ul li a { transition: all 0.5s ease; }
+
+
+h1{
+    text-align: center;
+}
+/* INTRO PART */
 .intro {
     display: flex;
     color: rgb(27, 13, 13);
@@ -32,32 +128,33 @@ img{width: 300px;
 .intro img{
     height: 300px;
     width: 100%;
-    box-shadow: 4PX;
-    
-     
 }
   .centered {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
-    margin-left:  100vh;
+    top: 45%;
+    margin-left: 36REM;
     color: white;
   text-align: center;
+  justify-content: center;
 
   }
-  .centered h1
+  .intro h1
   {
-    font-size: 40px;
+    font-size: 3REM;
    color: white;
    text-align: center;
-   padding-bottom: 6px;
+   padding-bottom: 2REM;
 
   }
-  .centered h2{
-    margin-left: 5px;
+  .INTRO h2{
+    margin-left: 10REM;
+    font-size: 2rem;
   }
+  
 
-.sidebar LI { 
+/* WHAT WILL U GET */
+  .sidebar LI { 
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
@@ -71,14 +168,6 @@ img{width: 300px;
     
 
 }
-.sidebar a:hover{
-    color: rgb(247, 168, 64);
-    animation: forwards;
-    transform: matrix3d(5px);
-    
-}
-
-
 .sidebar{
     height: max-content;
     position: absolute;
@@ -90,9 +179,7 @@ img{width: 300px;
     background-color: white;
 }
  
-.logo h1{text-align: center;
-    
-}
+
 h2{
     
     padding: 5px 5px;
@@ -121,48 +208,4 @@ a{
     color: black;
 
 }
-nav{
-    position: static;
-}
 
-nav ul li{
-    display: inline-block;
-    position: relative;
-    flex-direction: row;
-    
-}
-nav ul a{
-    display: block;
-    text-align: center;
-    width: 150px;
-    padding: 10px 20px;
-}
-nav ul a:hover{
-    background: rgb(219, 57, 57);
-}
-nav ul li ul li{
-    float:right;
-}
-nav ul li ul{
-    display: none;
-    position: absolute;
-    background: #fffcfc;
-    top: 2px;
-    
-    
-}
-nav ul li:hover>ul{
-    display: block;
-
-
-}
-nav ul li a{
-    display: block;
-}
-header h1{
-    text-align: center;
-}
-header nav{
-
-    direction: rtl;
-}
