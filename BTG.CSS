@@ -27,8 +27,8 @@ header{
 }
 .logo img{
     width:200px;
-    height: 100X;
-    padding-right: 45rem;
+    height: 100px;
+    padding-right: 50%;
 
 }
 
@@ -71,7 +71,7 @@ nav {
         visibility: hidden;
         opacity: 0;
         position: absolute;
-  padding-left: 0;
+         padding-left: 0;
         left: 0;
         display: none;
         background: white;
@@ -99,7 +99,7 @@ nav {
       ul li ul li a:hover {
         padding-left: 10px;
         border-left: 2px solid #0e1113;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
       }
   
   a {
@@ -133,10 +133,11 @@ h1{
     position: absolute;
     transform: translate(-50%, -50%);
     top: 45%;
-    margin-left: 36REM;
+    margin-left: 40%;
     color: white;
   text-align: center;
   justify-content: center;
+  overflow: hidden;
 
   }
   .intro h1
@@ -151,7 +152,10 @@ h1{
     margin-left: 10REM;
     font-size: 2rem;
   }
-  
+  .mid{
+    display: flex;
+    flex-direction: column;
+  }
 
 /* WHAT WILL U GET */
   .sidebar LI { 
